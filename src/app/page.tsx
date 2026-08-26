@@ -3,6 +3,7 @@ import { Showcase } from "@/components/screenshots/Showcase";
 import { InteractiveFeatures } from "@/components/features/InteractiveFeatures";
 import { Editions } from "@/components/editions/Editions";
 import { Architecture } from "@/components/architecture/Architecture";
+import { DemoSection } from "@/components/demo/DemoSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <InteractiveFeatures />
       <Editions />
       <Architecture />
+      <DemoSection />
     </>
   );
 }
