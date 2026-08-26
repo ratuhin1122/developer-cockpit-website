@@ -58,10 +58,13 @@ export function Hero() {
               </div>
             </div>
             
-            {/* Visual placeholder for the actual screenshot */}
-            <div className="mt-10 text-zinc-600 font-mono text-sm flex flex-col items-center">
-               <span className="mb-2">Image: assets/developer-cockpit.png</span>
-               <span className="text-zinc-700">(High-resolution interface rendering)</span>
+            {/* Actual screenshot */}
+            <div className="relative w-full h-full overflow-hidden">
+              <img 
+                 src="/developer-cockpit.png" 
+                 alt="Developer Cockpit Interface" 
+                 className="w-full h-full object-cover object-left-top"
+               />
             </div>
           </div>
         </div>
