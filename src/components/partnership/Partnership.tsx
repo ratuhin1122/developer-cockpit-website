@@ -133,14 +133,12 @@ export function Partnership() {
               Potential Collaboration Areas
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {collaborationAreas.map((area) => {
-            const Icon = area.icon
-            return (
-              <div 
-                key={area.title}
-                className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/30 hover:bg-zinc-800/50 transition-colors flex flex-col items-start text-left h-full"
-              >   <div className="flex items-center gap-3 mb-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {collaborationAreas.map((area, i) => {
+                const Icon = area.icon
+                return (
+                  <div key={i} className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5 hover:border-zinc-700 transition-colors flex flex-col h-full">
+                    <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-blue-400">
                         <Icon className="w-4 h-4" />
                       </div>

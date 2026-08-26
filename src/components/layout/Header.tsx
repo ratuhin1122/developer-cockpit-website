@@ -13,7 +13,7 @@ export function Header() {
     { name: "Features", href: "#features" },
     { name: "Architecture", href: "#architecture" },
     { name: "Roadmap", href: "#roadmap" },
-    { name: "Documentation", href: "#docs" },
+    { name: "Documentation", href: "https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs", external: true },
     { name: "Demo", href: "#demo" },
   ]
 
@@ -30,6 +30,8 @@ export function Header() {
               <Link 
                 key={link.name} 
                 href={link.href} 
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="text-zinc-400 hover:text-zinc-100 transition-colors"
               >
                 {link.name}
@@ -64,6 +66,8 @@ export function Header() {
               <Link 
                 key={link.name} 
                 href={link.href} 
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="block text-base font-medium text-zinc-400 hover:text-zinc-100 transition-colors py-3"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

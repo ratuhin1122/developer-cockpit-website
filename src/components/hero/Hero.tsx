@@ -1,12 +1,13 @@
 "use client"
 import * as React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { Play, ArrowRight, Code2 } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-40">
+    <section id="product" className="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-40">
       {/* Subtle Developer-oriented background pattern */}
       <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center opacity-10">
         <div className="w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-700 via-transparent to-transparent opacity-50 blur-3xl"></div>
@@ -33,14 +34,18 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24 animate-fade-in-up animation-delay-300">
-          <Button size="lg" className="w-full sm:w-auto group">
-            Explore Developer Cockpit
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-          <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-            <Play className="mr-2 h-4 w-4" />
-            Watch Demo
-          </Button>
+          <Link href="#features" className="w-full sm:w-auto">
+            <Button size="lg" className="w-full group">
+              Explore Developer Cockpit
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
+          <Link href="#demo" className="w-full sm:w-auto">
+            <Button variant="secondary" size="lg" className="w-full">
+              <Play className="mr-2 h-4 w-4" />
+              Watch Demo
+            </Button>
+          </Link>
         </div>
 
         {/* Product Visual */}

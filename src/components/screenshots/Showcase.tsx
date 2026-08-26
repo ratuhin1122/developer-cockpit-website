@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 import Image from "next/image"
-import { Terminal, GitBranch, Docker, Layout, Activity, Code2, Plug, ShieldCheck, Box } from "lucide-react"
+import { Terminal, GitBranch, Layout, Activity, Code2, Plug, ShieldCheck, Box } from "lucide-react"
 
 const features = [
   {

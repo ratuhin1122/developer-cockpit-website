@@ -89,6 +89,7 @@ export function Roadmap() {
         <div className="relative border-l border-zinc-800 ml-4 md:ml-8 pb-12">
           {roadmapPhases.map((phase, index) => {
             const Icon = phase.icon
+            const isFuture = phase.status === "Future" || phase.status === "Strategic Opportunities" || phase.id === "future" || phase.id === "strategic"
             return (
               <div key={phase.id} className={`mb-16 relative pl-10 md:pl-16 group ${isFuture ? 'opacity-70' : ''}`}>
                 {/* Timeline Dot */}
