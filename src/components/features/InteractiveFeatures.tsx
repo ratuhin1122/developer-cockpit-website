@@ -11,7 +11,7 @@ type Feature = {
   benefits: string[];
   techCapability: string;
   status: "Free" | "Pro" | "Core & Pro";
-  imageFocus: string; // CSS object-position to fake different crops of the main screenshot
+  image: string;
 };
 
 type FeatureGroup = {
@@ -34,7 +34,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Unlimited tabs", "Recursive split panes (horizontal/vertical)", "Custom themes and live font zooming", "In-buffer search"],
         techCapability: "ConPTY / xterm.js",
         status: "Free",
-        imageFocus: "object-[10%_10%]"
+        image: "/images/Terminal.png"
       }
     ]
   },
@@ -50,7 +50,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Instant layout restore", "Preserves exact working directories", "Saves cognitive overhead across reboots"],
         techCapability: "SQLite Session Persistence",
         status: "Pro",
-        imageFocus: "object-[0%_50%]"
+        image: "/images/Workspace.png"
       },
       {
         id: "project-launcher",
@@ -59,7 +59,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Single-click startup", "Framework auto-detection", "Simultaneous process launching"],
         techCapability: "Win32 Process Creation",
         status: "Pro",
-        imageFocus: "object-[0%_100%]"
+        image: "/images/Project.png"
       }
     ]
   },
@@ -75,7 +75,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Compose v2 service grouping", "Visual SVG service dependency graph", "WSL2 Docker Doctor health checks", "Container terminal shell launcher"],
         techCapability: "Tauri Channels / Docker CLI",
         status: "Pro",
-        imageFocus: "object-[100%_10%]"
+        image: "/images/Docker.png"
       },
       {
         id: "port-manager",
@@ -84,7 +84,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Extract command lines and working directories", "Recursive process tree killing", "In-place process restart"],
         techCapability: "Win32 APIs / Netstat",
         status: "Pro",
-        imageFocus: "object-[100%_50%]"
+        image: "/images/Ports.png"
       },
       {
         id: "ssh",
@@ -93,7 +93,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Zero-Password storage policy", "Credentials never stored in DB/logs", "Instant 1-click connect"],
         techCapability: "Ed25519 / DPAPI",
         status: "Pro",
-        imageFocus: "object-[100%_100%]"
+        image: "/images/SSH.png"
       }
     ]
   },
@@ -109,7 +109,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Visual SVG commit history graph", "Ahead/behind upstream counts", "Stash and Tag managers", "Cherry-pick and merge conflict assistants"],
         techCapability: "Native Git CLI Integration",
         status: "Core & Pro",
-        imageFocus: "object-[50%_50%]"
+        image: "/images/Git.png"
       }
     ]
   },
@@ -125,7 +125,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Single-click execution into active terminal shells", "Fast categorization", "Local storage"],
         techCapability: "SQLite",
         status: "Free",
-        imageFocus: "object-[20%_80%]"
+        image: "/images/Snippets.png"
       },
       {
         id: "version-dashboard",
@@ -134,7 +134,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Auto-detects 12 developer toolchains", "Verifies exact version strings", "Resolves filesystem paths"],
         techCapability: "Filesystem Probing",
         status: "Free",
-        imageFocus: "object-[80%_80%]"
+        image: "/images/Version.png"
       }
     ]
   },
@@ -150,7 +150,7 @@ const featureGroups: FeatureGroup[] = [
         benefits: ["Sandboxed iframe/worker runtime", "Custom sidebar modules", "Overview dashboard widgets", "Scoped SQLite key-value persistence"],
         techCapability: "TypeScript SDK / iframe RPC",
         status: "Pro",
-        imageFocus: "object-[50%_0%]"
+        image: "/images/Pluggins.png"
       }
     ]
   }
@@ -220,15 +220,15 @@ export function InteractiveFeatures() {
               className="rounded-xl border border-zinc-800 bg-zinc-900/50 overflow-hidden shadow-2xl animate-fade-in-up"
             >
               {/* Feature Image Area */}
-              <div className="w-full h-64 bg-zinc-950 border-b border-zinc-800 relative overflow-hidden">
+              <div className="w-full aspect-[16/10] bg-zinc-950 border-b border-zinc-800 relative overflow-hidden flex items-center justify-center">
                 <Image 
-                  src="/developer-cockpit.png" 
+                  key={activeFeature.image}
+                  src={activeFeature.image} 
                   alt={activeFeature.name} 
                   fill
                   sizes="(max-width: 1200px) 100vw, 800px"
-                  className={`object-cover transition-all duration-700 ease-in-out ${activeFeature.imageFocus}`}
+                  className="object-contain object-center transition-all duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
               </div>
 
               {/* Feature Details */}

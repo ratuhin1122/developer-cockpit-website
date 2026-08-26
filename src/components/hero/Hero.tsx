@@ -49,10 +49,10 @@ export function Hero() {
         </div>
 
         {/* Product Visual */}
-        <div className="mx-auto max-w-5xl rounded-lg border border-zinc-800 bg-zinc-900/50 p-2 shadow-2xl backdrop-blur-sm animate-fade-in-up animation-delay-400">
-          <div className="rounded-md overflow-hidden border border-zinc-800 relative bg-zinc-950 aspect-[16/9] flex items-center justify-center">
+        {/* <div className="mx-auto max-w-5xl rounded-lg border border-zinc-800 bg-zinc-900/50 p-2 shadow-2xl backdrop-blur-sm animate-fade-in-up animation-delay-400">
+          <div className="rounded-md overflow-hidden border border-zinc-800 relative bg-zinc-950 aspect-[16/9] flex items-center justify-center"> */}
             {/* Minimal window controls */}
-            <div className="absolute top-0 left-0 w-full h-10 border-b border-zinc-800 bg-zinc-900/80 flex items-center px-4">
+            {/* <div className="absolute top-0 left-0 w-full h-10 border-b border-zinc-800 bg-zinc-900/80 flex items-center px-4">
               <div className="flex space-x-2">
                 <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
                 <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
@@ -61,10 +61,10 @@ export function Hero() {
               <div className="mx-auto text-xs font-mono text-zinc-500 flex items-center">
                 <Code2 className="w-3 h-3 mr-2" /> Developer Cockpit
               </div>
-            </div>
+            </div> */}
             
             {/* Actual screenshot */}
-            <div className="relative w-full aspect-[16/10] overflow-hidden bg-zinc-950">
+            {/* <div className="relative w-full aspect-[16/10] overflow-hidden bg-zinc-950">
               <Image 
                  src="/developer-cockpit.png" 
                  alt="Developer Cockpit Interface" 
@@ -73,9 +73,9 @@ export function Hero() {
                  priority
                  className="object-cover object-left-top"
                />
-            </div>
-          </div>
-        </div>
+            </div> */}
+          {/* </div>
+        </div> */}
       </div>
     </section>
   )

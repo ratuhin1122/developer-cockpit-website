@@ -73,12 +73,12 @@ export function DemoSection() {
                 Download the Free edition today and start experiencing zero-latency development.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                <Button size="lg" className="w-full sm:w-auto">
+                {/* <Button size="lg" className="w-full sm:w-auto">
                   <Download className="mr-2 h-4 w-4" />
                   Download for Windows
-                </Button>
+                </Button> */}
                 <Link href="#editions" className="w-full sm:w-auto">
-                  <Button variant="outline" size="lg" className="w-full">
+                  <Button variant="primary" size="lg" className="w-full">
                     Compare Editions
                   </Button>
                 </Link>

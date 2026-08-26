@@ -90,7 +90,7 @@ export function Partnership() {
             <Link href="mailto:ruhulamintuhin715@gmail.com">
               <Button size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white border-0 group">
                 <Mail className="mr-2 h-4 w-4" />
-                Partner With Developer Cockpit
+                ruhulamintuhin715@gmail.com
               </Button>
             </Link>
             <Link href="https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs" target="_blank">

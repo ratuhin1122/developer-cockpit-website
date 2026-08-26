@@ -65,11 +65,11 @@ export function Editions() {
               </ul>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-zinc-800">
+            {/* <div className="mt-12 pt-8 border-t border-zinc-800">
               <Button variant="secondary" className="w-full">
                 Download Free Edition
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Pro Edition */}

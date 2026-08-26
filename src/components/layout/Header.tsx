@@ -42,11 +42,11 @@ export function Header() {
         
         <div className="hidden md:flex items-center space-x-4">
           <Link href="#partner">
-            <Button variant="ghost" size="sm" className="hidden lg:inline-flex text-zinc-400 hover:text-zinc-100">
+            <Button variant="primary" size="sm">
               Partner With Us
             </Button>
           </Link>
-          <Button variant="primary" size="sm">Download Free</Button>
+          {/* <Button variant="primary" size="sm">Download Free</Button> */}
         </div>
 
         {/* Mobile menu button */}
@@ -76,9 +76,9 @@ export function Header() {
             ))}
             <div className="pt-6 border-t border-zinc-800 flex flex-col space-y-4">
               <Link href="#partner" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button variant="outline" className="w-full justify-center">Partner With Us</Button>
+                <Button variant="primary" className="w-full justify-center">Partner With Us</Button>
               </Link>
-              <Button variant="primary" className="w-full justify-center">Download Free</Button>
+              {/* <Button variant="primary" className="w-full justify-center">Download Free</Button> */}
             </div>
           </nav>
         </div>
