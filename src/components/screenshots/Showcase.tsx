@@ -1,6 +1,6 @@
 "use client"
-
 import * as React from "react"
+import Image from "next/image"
 import { Terminal, GitBranch, Docker, Layout, Activity, Code2, Plug, ShieldCheck, Box } from "lucide-react"
 
 const features = [
@@ -82,10 +82,12 @@ export function Showcase() {
             </div>
             {/* The Actual Application Screenshot */}
             <div className="relative aspect-[16/10] md:aspect-[16/9] w-full bg-zinc-950 overflow-hidden">
-               <img 
+               <Image 
                  src="/developer-cockpit.png" 
                  alt="Developer Cockpit Interface" 
-                 className="w-full h-full object-cover object-top"
+                 fill
+                 sizes="(max-width: 1200px) 100vw, 1200px"
+                 className="object-cover object-top"
                />
             </div>
           </div>
@@ -98,7 +100,7 @@ export function Showcase() {
             return (
               <div 
                 key={feature.name}
-                className="group p-6 rounded-xl border border-zinc-800 bg-zinc-900/30 hover:bg-zinc-800/50 hover:border-zinc-700 transition-all duration-200 cursor-pointer"
+                className="group p-6 rounded-xl border border-zinc-800 bg-zinc-900/30 hover:bg-zinc-800/50 hover:border-zinc-700 transition-all duration-200 cursor-pointer flex flex-col h-full"
                 onMouseEnter={() => setActiveFeature(index)}
               >
                 <div className="flex justify-between items-start mb-4">

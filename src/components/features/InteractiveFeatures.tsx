@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import { Terminal, Layout, HardDrive, GitBranch, Zap, Plug } from "lucide-react"
 
 type Feature = {
@@ -176,21 +177,21 @@ export function InteractiveFeatures() {
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           {/* Left Column: Navigation */}
-          <div className="lg:w-1/3 flex flex-col gap-8">
+          <div className="lg:w-1/3 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-4 lg:pb-0 scrollbar-hide gap-6 lg:gap-8 snap-x">
             {featureGroups.map((group) => {
               const Icon = group.icon
               const isActiveGroup = group.id === activeGroupId
               
               return (
-                <div key={group.id} className="flex flex-col">
+                <div key={group.id} className="flex flex-col min-w-[200px] lg:min-w-0 snap-start">
                   <button 
                     onClick={() => {
                       setActiveGroupId(group.id)
                       setActiveFeatureId(group.features[0].id)
                     }}
-                    className={`flex items-center gap-3 text-lg font-medium transition-colors mb-3 ${isActiveGroup ? 'text-zinc-100' : 'text-zinc-500 hover:text-zinc-300'}`}
+                    className={`flex items-center gap-3 text-lg font-medium transition-colors mb-3 whitespace-nowrap lg:whitespace-normal ${isActiveGroup ? 'text-zinc-100' : 'text-zinc-500 hover:text-zinc-300'}`}
                   >
-                    <Icon className={`w-5 h-5 ${isActiveGroup ? 'text-blue-500' : ''}`} />
+                    <Icon className={`w-5 h-5 shrink-0 ${isActiveGroup ? 'text-blue-500' : ''}`} />
                     {group.name}
                   </button>
                   
@@ -200,7 +201,7 @@ export function InteractiveFeatures() {
                         <button
                           key={feature.id}
                           onClick={() => setActiveFeatureId(feature.id)}
-                          className={`text-left text-sm py-1.5 transition-colors ${activeFeatureId === feature.id ? 'text-zinc-100 font-medium' : 'text-zinc-500 hover:text-zinc-300'}`}
+                          className={`text-left text-sm py-1.5 transition-colors whitespace-nowrap lg:whitespace-normal ${activeFeatureId === feature.id ? 'text-zinc-100 font-medium' : 'text-zinc-500 hover:text-zinc-300'}`}
                         >
                           {feature.name}
                         </button>
@@ -220,12 +221,14 @@ export function InteractiveFeatures() {
             >
               {/* Feature Image Area */}
               <div className="w-full h-64 bg-zinc-950 border-b border-zinc-800 relative overflow-hidden">
-                <img 
+                <Image 
                   src="/developer-cockpit.png" 
                   alt={activeFeature.name} 
-                  className={`w-full h-full object-cover transition-all duration-700 ease-in-out scale-150 ${activeFeature.imageFocus}`}
+                  fill
+                  sizes="(max-width: 1200px) 100vw, 800px"
+                  className={`object-cover transition-all duration-700 ease-in-out ${activeFeature.imageFocus}`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
               </div>
 
               {/* Feature Details */}

@@ -1,6 +1,6 @@
 "use client"
-
 import * as React from "react"
+import Image from "next/image"
 import { Play, ArrowRight, Code2 } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 
@@ -22,12 +22,12 @@ export function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-foreground mb-8 max-w-4xl mx-auto leading-tight animate-fade-in-up animation-delay-100">
+        <h1 className="text-5xl md:text-[5.5rem] font-semibold tracking-tight text-foreground mb-8 max-w-[54rem] mx-auto leading-[1.1] animate-fade-in-up animation-delay-100">
           One workspace for the tools developers use <span className="text-zinc-500">every day.</span>
         </h1>
         
         {/* Supporting Description */}
-        <p className="text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up animation-delay-200">
+        <p className="text-xl md:text-2xl text-zinc-400 max-w-[42rem] mx-auto mb-10 leading-relaxed animate-fade-in-up animation-delay-200">
           An extensible desktop developer workspace that brings essential development workflows together in one place. Built natively for Windows.
         </p>
 
@@ -59,11 +59,14 @@ export function Hero() {
             </div>
             
             {/* Actual screenshot */}
-            <div className="relative w-full h-full overflow-hidden">
-              <img 
+            <div className="relative w-full aspect-[16/10] overflow-hidden bg-zinc-950">
+              <Image 
                  src="/developer-cockpit.png" 
                  alt="Developer Cockpit Interface" 
-                 className="w-full h-full object-cover object-left-top"
+                 fill
+                 sizes="(max-width: 1200px) 100vw, 1200px"
+                 priority
+                 className="object-cover object-left-top"
                />
             </div>
           </div>

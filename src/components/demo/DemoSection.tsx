@@ -27,7 +27,7 @@ export function DemoSection() {
                 width="100%" 
                 height="100%" 
                 src="https://www.youtube.com/embed/VX4sPTuXyGk?rel=0&modestbranding=1" 
-                title="Developer Cockpit Product Demo" 
+                title="Developer Cockpit Application Demo" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen

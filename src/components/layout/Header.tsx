@@ -44,7 +44,7 @@ export function Header() {
               Partner With Us
             </Button>
           </Link>
-          <Button variant="secondary" size="sm">Download Free</Button>
+          <Button variant="primary" size="sm">Download Free</Button>
         </div>
 
         {/* Mobile menu button */}
@@ -59,22 +59,22 @@ export function Header() {
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-b border-zinc-800 bg-zinc-950 p-6">
-          <nav className="flex flex-col space-y-4">
+          <nav className="flex flex-col space-y-2 mt-4">
             {navLinks.map((link) => (
               <Link 
                 key={link.name} 
                 href={link.href} 
-                className="text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors"
+                className="block text-base font-medium text-zinc-400 hover:text-zinc-100 transition-colors py-3"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4 flex flex-col space-y-3">
-              <Link href="#partner">
-                <Button variant="outline" className="w-full justify-start">Partner With Us</Button>
+            <div className="pt-6 border-t border-zinc-800 flex flex-col space-y-4">
+              <Link href="#partner" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="outline" className="w-full justify-center">Partner With Us</Button>
               </Link>
-              <Button variant="primary" className="w-full justify-start">Download Free</Button>
+              <Button variant="primary" className="w-full justify-center">Download Free</Button>
             </div>
           </nav>
         </div>

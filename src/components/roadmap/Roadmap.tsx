@@ -90,7 +90,7 @@ export function Roadmap() {
           {roadmapPhases.map((phase, index) => {
             const Icon = phase.icon
             return (
-              <div key={phase.id} className="mb-16 relative pl-10 md:pl-16 group">
+              <div key={phase.id} className={`mb-16 relative pl-10 md:pl-16 group ${isFuture ? 'opacity-70' : ''}`}>
                 {/* Timeline Dot */}
                 <div className={`absolute -left-[17px] top-0.5 w-8 h-8 rounded-full bg-zinc-950 flex items-center justify-center ${phase.iconColor}`}>
                   <Icon className="w-5 h-5 bg-zinc-950 rounded-full" />
@@ -103,7 +103,7 @@ export function Roadmap() {
                       {phase.status}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-semibold text-zinc-100 mb-6">{phase.phase}</h3>
+                  <h3 className={`text-2xl font-semibold mb-6 ${isFuture ? 'text-zinc-300' : 'text-zinc-100'}`}>{phase.phase}</h3>
                   
                   <ul className="space-y-4">
                     {phase.items.map((item, i) => {

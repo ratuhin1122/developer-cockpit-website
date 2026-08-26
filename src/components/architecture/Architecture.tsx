@@ -22,8 +22,8 @@ export function Architecture() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Architecture Diagram Column */}
-          <div className="lg:col-span-7">
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8 backdrop-blur-sm shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-7 overflow-hidden">
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 md:p-8 backdrop-blur-sm shadow-2xl relative">
               <div className="absolute inset-0 bg-grid-zinc-800/[0.2] bg-[size:20px_20px]"></div>
               
               <div className="relative z-10 flex flex-col gap-4">

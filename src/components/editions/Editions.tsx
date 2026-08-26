@@ -42,7 +42,7 @@ export function Editions() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {/* Free Edition */}
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8 md:p-12 backdrop-blur-sm flex flex-col relative">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8 md:p-12 backdrop-blur-sm flex flex-col relative shadow-[inset_0_1px_0_0_rgba(255,255,255,0.02)]">
             <div className="mb-8 border-b border-zinc-800 pb-8">
               <h3 className="text-2xl font-semibold text-zinc-100 mb-2">Free Edition</h3>
               <p className="text-zinc-400">Essential tools for individual developers.</p>
@@ -73,7 +73,7 @@ export function Editions() {
           </div>
 
           {/* Pro Edition */}
-          <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/60 p-8 md:p-12 backdrop-blur-sm flex flex-col relative shadow-[0_0_80px_rgba(16,185,129,0.05)]">
+          <div className="rounded-2xl border border-emerald-500/30 bg-zinc-900/60 p-8 md:p-12 backdrop-blur-sm flex flex-col relative shadow-[0_0_80px_rgba(16,185,129,0.05),inset_0_1px_0_0_rgba(16,185,129,0.2)]">
             <div className="absolute top-0 right-0 p-8">
               <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-mono uppercase tracking-wider text-emerald-400">
                 Premium

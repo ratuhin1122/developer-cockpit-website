@@ -27,11 +27,11 @@ export function Footer() {
         <div>
           <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Product</h4>
           <ul className="space-y-3 text-sm">
-            <li><Link href="#features" className="hover:text-zinc-100 transition-colors">Features</Link></li>
-            <li><Link href="#architecture" className="hover:text-zinc-100 transition-colors">Architecture</Link></li>
-            <li><Link href="#editions" className="hover:text-zinc-100 transition-colors">Editions</Link></li>
-            <li><Link href="#roadmap" className="hover:text-zinc-100 transition-colors">Roadmap</Link></li>
-            <li><Link href="#demo" className="hover:text-zinc-100 transition-colors">Demo</Link></li>
+            <li><Link href="#features" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Features</Link></li>
+            <li><Link href="#architecture" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Architecture</Link></li>
+            <li><Link href="#editions" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Editions</Link></li>
+            <li><Link href="#roadmap" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Roadmap</Link></li>
+            <li><Link href="#demo" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Demo</Link></li>
           </ul>
         </div>
 
@@ -39,9 +39,9 @@ export function Footer() {
         <div>
           <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Resources</h4>
           <ul className="space-y-3 text-sm">
-            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs" target="_blank" className="hover:text-zinc-100 transition-colors">Documentation</Link></li>
-            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public" target="_blank" className="hover:text-zinc-100 transition-colors">GitHub Repository</Link></li>
-            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/blob/main/docs/licensing/LICENSE.md" target="_blank" className="hover:text-zinc-100 transition-colors">License</Link></li>
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Documentation</Link></li>
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">GitHub Repository</Link></li>
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/blob/main/docs/licensing/LICENSE.md" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">License</Link></li>
           </ul>
         </div>
 
@@ -49,8 +49,8 @@ export function Footer() {
         <div>
           <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Company</h4>
           <ul className="space-y-3 text-sm">
-            <li><Link href="#partner" className="hover:text-zinc-100 transition-colors">Partner With Us</Link></li>
-            <li><Link href="mailto:ruhulamintuhin715@gmail.com" className="hover:text-zinc-100 transition-colors">Contact</Link></li>
+            <li><Link href="#partner" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Partner With Us</Link></li>
+            <li><Link href="mailto:ruhulamintuhin715@gmail.com" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Contact</Link></li>
           </ul>
         </div>
 
