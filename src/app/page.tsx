@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero/Hero";
 import { Showcase } from "@/components/screenshots/Showcase";
 import { InteractiveFeatures } from "@/components/features/InteractiveFeatures";
+import { Editions } from "@/components/editions/Editions";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Showcase />
       <InteractiveFeatures />
+      <Editions />
     </>
   );
 }
