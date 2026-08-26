@@ -4,6 +4,7 @@ import { InteractiveFeatures } from "@/components/features/InteractiveFeatures";
 import { Editions } from "@/components/editions/Editions";
 import { Architecture } from "@/components/architecture/Architecture";
 import { DemoSection } from "@/components/demo/DemoSection";
+import { Roadmap } from "@/components/roadmap/Roadmap";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Editions />
       <Architecture />
       <DemoSection />
+      <Roadmap />
     </>
   );
 }
