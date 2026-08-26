@@ -1,16 +1,60 @@
-import Link from "next/link";
+"use client"
+
+import * as React from "react"
+import Link from "next/link"
+import { Terminal } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-zinc-950 mt-24">
-      <div className="mx-auto max-w-[1200px] px-6 py-12 flex flex-col md:flex-row justify-between items-center text-sm text-zinc-500">
-        <p>&copy; {new Date().getFullYear()} Developer Cockpit. All rights reserved.</p>
-        <div className="flex space-x-6 mt-4 md:mt-0">
-          <Link href="#terms" className="hover:text-zinc-300">Terms</Link>
-          <Link href="#privacy" className="hover:text-zinc-300">Privacy</Link>
-          <a href="mailto:ruhulamintuhin715@gmail.com" className="hover:text-zinc-300">Contact</a>
+    <footer className="border-t border-zinc-800 bg-zinc-950 text-zinc-400 py-12 md:py-16">
+      <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        {/* Brand */}
+        <div className="md:col-span-1">
+          <Link href="/" className="flex items-center space-x-2 mb-4">
+            <Terminal className="h-5 w-5 text-zinc-100" />
+            <span className="font-semibold text-zinc-100 tracking-tight text-lg">Developer Cockpit</span>
+          </Link>
+          <p className="text-sm text-zinc-500 mb-6">
+            The unified developer workspace for Windows.
+          </p>
+          <p className="text-xs text-zinc-600">
+            &copy; {new Date().getFullYear()} Developer Cockpit. All rights reserved.
+          </p>
         </div>
+
+        {/* Product */}
+        <div>
+          <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Product</h4>
+          <ul className="space-y-3 text-sm">
+            <li><Link href="#features" className="hover:text-zinc-100 transition-colors">Features</Link></li>
+            <li><Link href="#architecture" className="hover:text-zinc-100 transition-colors">Architecture</Link></li>
+            <li><Link href="#editions" className="hover:text-zinc-100 transition-colors">Editions</Link></li>
+            <li><Link href="#roadmap" className="hover:text-zinc-100 transition-colors">Roadmap</Link></li>
+            <li><Link href="#demo" className="hover:text-zinc-100 transition-colors">Demo</Link></li>
+          </ul>
+        </div>
+
+        {/* Resources */}
+        <div>
+          <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Resources</h4>
+          <ul className="space-y-3 text-sm">
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs" target="_blank" className="hover:text-zinc-100 transition-colors">Documentation</Link></li>
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public" target="_blank" className="hover:text-zinc-100 transition-colors">GitHub Repository</Link></li>
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/blob/main/docs/licensing/LICENSE.md" target="_blank" className="hover:text-zinc-100 transition-colors">License</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Company</h4>
+          <ul className="space-y-3 text-sm">
+            <li><Link href="#partner" className="hover:text-zinc-100 transition-colors">Partner With Us</Link></li>
+            <li><Link href="mailto:ruhulamintuhin715@gmail.com" className="hover:text-zinc-100 transition-colors">Contact</Link></li>
+          </ul>
+        </div>
+
       </div>
     </footer>
-  );
+  )
 }
