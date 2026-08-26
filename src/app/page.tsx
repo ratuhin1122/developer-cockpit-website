@@ -5,6 +5,7 @@ import { Editions } from "@/components/editions/Editions";
 import { Architecture } from "@/components/architecture/Architecture";
 import { DemoSection } from "@/components/demo/DemoSection";
 import { Roadmap } from "@/components/roadmap/Roadmap";
+import { Partnership } from "@/components/partnership/Partnership";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Architecture />
       <DemoSection />
       <Roadmap />
+      <Partnership />
     </>
   );
 }
