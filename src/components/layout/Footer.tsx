@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Terminal } from "lucide-react"
+import { Logo } from "@/components/ui/Logo"
 
 export function Footer() {
   return (
@@ -11,9 +11,11 @@ export function Footer() {
         
         {/* Brand */}
         <div className="md:col-span-1">
-          <Link href="/" className="flex items-center space-x-2 mb-4">
-            <Terminal className="h-5 w-5 text-zinc-100" />
-            <span className="font-semibold text-zinc-100 tracking-tight text-lg">Developer Cockpit</span>
+          <Link href="/" className="flex items-center space-x-3 mb-4 group">
+            <Logo className="h-7 w-9 shrink-0 transition-transform group-hover:scale-105" />
+            <span className="font-semibold text-zinc-100 tracking-tight text-lg group-hover:text-white transition-colors">
+              Developer Cockpit
+            </span>
           </Link>
           <p className="text-sm text-zinc-500 mb-6">
             The unified developer workspace for Windows.

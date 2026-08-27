@@ -88,7 +88,7 @@ export function Partnership() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="mailto:ruhulamintuhin715@gmail.com">
-              <Button size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white border-0 group">
+              <Button variant="primary" size="lg" className="w-full sm:w-auto group">
                 <Mail className="mr-2 h-4 w-4" />
                 ruhulamintuhin715@gmail.com
               </Button>

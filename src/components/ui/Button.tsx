@@ -15,7 +15,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(
           "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 disabled:pointer-events-none disabled:opacity-50",
           {
-            "bg-zinc-100 text-zinc-900 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] hover:bg-zinc-200 border border-transparent": variant === "primary",
+            "bg-gradient-to-r from-[#6B2E92] to-[#00D2D9] text-white shadow-md shadow-[#6B2E92]/25 hover:opacity-95 hover:shadow-lg hover:shadow-[#00D2D9]/30 hover:brightness-110 active:scale-[0.98] border border-white/10 font-semibold": variant === "primary",
             "bg-zinc-800 text-zinc-100 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] hover:bg-zinc-700 border border-zinc-700/50": variant === "secondary",
             "border border-zinc-700 bg-transparent text-zinc-300 hover:bg-zinc-800 hover:text-zinc-100": variant === "outline",
             "bg-transparent text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100": variant === "ghost",
