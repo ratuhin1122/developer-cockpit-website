@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X, ArrowRight } from "lucide-react"
+import { Menu, X, ArrowRight, Download } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 import { Logo } from "@/components/ui/Logo"
 
@@ -49,7 +49,17 @@ export function Header() {
         </div>
         
         {/* Right Action */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-3">
+          <a
+            href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="secondary" size="sm" className="font-medium shadow-sm group">
+              <Download className="mr-1.5 h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5" />
+              Download v1.0.0
+            </Button>
+          </a>
           <Link href="/#partner">
             <Button variant="primary" size="sm" className="font-medium shadow-sm">
               Partner With Us
@@ -84,6 +94,17 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-4 mt-2 border-t border-zinc-800 flex flex-col space-y-3">
+              <a 
+                href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Button variant="secondary" className="w-full justify-center group">
+                  <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+                  Download v1.0.0
+                </Button>
+              </a>
               <Link href="/#partner" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button variant="primary" className="w-full justify-center">
                   Partner With Us

@@ -78,7 +78,8 @@ export default function RootLayout({
       </head>
       <body 
         suppressHydrationWarning
-        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-blue-500/30 selection:text-blue-200`}
+        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased text-foreground min-h-screen flex flex-col selection:bg-blue-500/30 selection:text-blue-200`}
+        style={{ backgroundColor: "rgba(14, 15, 18, 0.72)" }}
       >
         <Header />
         <main className="flex-1">

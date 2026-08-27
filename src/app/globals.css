@@ -17,12 +17,17 @@
 
 @layer base {
   :root {
-    --background: #09090B;
+    --background: rgba(14, 15, 18, 0.72);
     --foreground: #FAFAFA;
   }
 
+  html {
+    background-color: #0E0F12;
+    color-scheme: dark;
+  }
+
   body {
-    background-color: var(--background);
+    background-color: rgba(14, 15, 18, 0.72);
     color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;

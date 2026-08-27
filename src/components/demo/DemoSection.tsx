@@ -73,15 +73,21 @@ export function DemoSection() {
                 Download the Free edition today and start experiencing zero-latency development.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 w-full">
+                <a 
+                  href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex-1 w-full"
+                >
+                  <Button variant="primary" size="default" className="w-full group">
+                    <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+                    Download Free v1.0.0
+                  </Button>
+                </a>
                 <Link href="/demo" className="flex-1 w-full">
                   <Button variant="secondary" size="default" className="w-full">
                     <Play className="mr-2 h-4 w-4 fill-current" />
                     All 7 Feature Demos
-                  </Button>
-                </Link>
-                <Link href="/#editions" className="flex-1 w-full">
-                  <Button variant="primary" size="default" className="w-full">
-                    Compare Editions
                   </Button>
                 </Link>
               </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Check, ArrowRight, Shield, Key, Code } from "lucide-react"
+import { Check, ArrowRight, Shield, Key, Code, Download } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 import Link from "next/link"
 
@@ -65,11 +65,19 @@ export function Editions() {
               </ul>
             </div>
 
-            {/* <div className="mt-12 pt-8 border-t border-zinc-800">
-              <Button variant="secondary" className="w-full">
-                Download Free Edition
-              </Button>
-            </div> */}
+            <div className="mt-12 pt-8 border-t border-zinc-800">
+              <a 
+                href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button variant="secondary" className="w-full group">
+                  <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+                  Download Free Edition (v1.0.0)
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Pro Edition */}

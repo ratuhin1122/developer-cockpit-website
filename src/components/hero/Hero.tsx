@@ -2,7 +2,7 @@
 import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Play, ArrowRight, Code2 } from "lucide-react"
+import { Play, ArrowRight, Code2, Download } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 
 export function Hero() {
@@ -16,10 +16,16 @@ export function Hero() {
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
         {/* Subtle Badge */}
         <div className="flex justify-center mb-8 animate-fade-in-up">
-          <div className="inline-flex items-center rounded-full border border-zinc-700/50 bg-zinc-800/20 px-3 py-1 text-sm text-zinc-400 backdrop-blur-sm">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>
-            Developer Cockpit v0.1.0 is now available
-          </div>
+          <a
+            href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1 text-sm text-emerald-300 backdrop-blur-sm hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-colors group"
+          >
+            <span className="flex h-2 w-2 rounded-full bg-emerald-400 mr-2 animate-pulse"></span>
+            Developer Cockpit v1.0.0 is now available
+            <ArrowRight className="ml-1.5 h-3.5 w-3.5 text-emerald-400 transition-transform group-hover:translate-x-0.5" />
+          </a>
         </div>
 
         {/* Headline */}
@@ -34,14 +40,25 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24 animate-fade-in-up animation-delay-300">
-          <Link href="/#features" className="w-full sm:w-auto">
+          <a 
+            href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
             <Button size="lg" className="w-full group">
-              Explore Developer Cockpit
+              <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+              Download v1.0.0
+            </Button>
+          </a>
+          <Link href="/#features" className="w-full sm:w-auto">
+            <Button variant="secondary" size="lg" className="w-full group">
+              Explore Features
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
           <Link href="/demo" className="w-full sm:w-auto">
-            <Button variant="secondary" size="lg" className="w-full">
+            <Button variant="outline" size="lg" className="w-full">
               <Play className="mr-2 h-4 w-4" />
               Watch Demos
             </Button>

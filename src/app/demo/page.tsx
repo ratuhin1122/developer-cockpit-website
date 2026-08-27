@@ -166,7 +166,7 @@ export default function DemoPage() {
   const ActiveIcon = selectedVideo.icon
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-foreground">
+    <div className="min-h-screen text-foreground">
       {/* Top Header / Breadcrumb */}
       <div className="border-b border-zinc-900 bg-zinc-950/60 backdrop-blur-md sticky top-16 z-40">
         <div className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">

@@ -41,6 +41,7 @@ export function Footer() {
         <div>
           <h4 className="text-zinc-100 font-semibold mb-4 text-sm">Resources</h4>
           <ul className="space-y-3 text-sm">
+            <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/releases/tag/v1.0.0" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm text-emerald-400 font-medium">Download v1.0.0</Link></li>
             <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">Documentation</Link></li>
             <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">GitHub Repository</Link></li>
             <li><Link href="https://github.com/ratuhin1122/developer-cockpit-public/blob/main/docs/licensing/LICENSE.md" target="_blank" className="hover:text-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400 rounded-sm">License</Link></li>
