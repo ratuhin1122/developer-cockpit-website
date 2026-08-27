@@ -67,24 +67,20 @@ export function DemoSection() {
               </ul>
             </div>
 
-            <div className="flex flex-col items-start md:items-end p-8 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-left md:text-right">
+            <div className="flex flex-col p-8 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-left">
               <h3 className="text-2xl font-semibold text-zinc-100 mb-3">Ready to upgrade your workflow?</h3>
-              <p className="text-zinc-400 mb-8 max-w-sm">
+              <p className="text-zinc-400 mb-6 max-w-md">
                 Download the Free edition today and start experiencing zero-latency development.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                {/* <Button size="lg" className="w-full sm:w-auto">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download for Windows
-                </Button> */}
-                <Link href="/demo" className="w-full sm:w-auto">
-                  <Button variant="secondary" size="lg" className="w-full">
+              <div className="flex flex-col sm:flex-row gap-3 w-full">
+                <Link href="/demo" className="flex-1 w-full">
+                  <Button variant="secondary" size="default" className="w-full">
                     <Play className="mr-2 h-4 w-4 fill-current" />
                     All 7 Feature Demos
                   </Button>
                 </Link>
-                <Link href="/#editions" className="w-full sm:w-auto">
-                  <Button variant="primary" size="lg" className="w-full">
+                <Link href="/#editions" className="flex-1 w-full">
+                  <Button variant="primary" size="default" className="w-full">
                     Compare Editions
                   </Button>
                 </Link>
