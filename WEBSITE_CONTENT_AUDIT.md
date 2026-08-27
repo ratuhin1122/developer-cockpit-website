@@ -136,12 +136,13 @@ Developer Cockpit consolidates fragmented daily developer utilities (terminals, 
 
 ## 23. Existing Demo Video
 - Documented in `demo/DEMO.md`
-- Contains LinkedIn video links for:
+- Contains YouTube video links for:
   - Modern Terminal
   - Project & Workspace Launcher
   - Port Manager, Versions & Snippets
   - Git Dashboard
   - Docker Workspace & Doctor
+  - Plugin System (SDK v2)
 
 ## 24. Existing Branding/Assets
 - Main Logo/UI: `assets/developer-cockpit.png`
