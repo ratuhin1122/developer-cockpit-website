@@ -77,7 +77,13 @@ export function DemoSection() {
                   <Download className="mr-2 h-4 w-4" />
                   Download for Windows
                 </Button> */}
-                <Link href="#editions" className="w-full sm:w-auto">
+                <Link href="/demo" className="w-full sm:w-auto">
+                  <Button variant="secondary" size="lg" className="w-full">
+                    <Play className="mr-2 h-4 w-4 fill-current" />
+                    All 7 Feature Demos
+                  </Button>
+                </Link>
+                <Link href="/#editions" className="w-full sm:w-auto">
                   <Button variant="primary" size="lg" className="w-full">
                     Compare Editions
                   </Button>

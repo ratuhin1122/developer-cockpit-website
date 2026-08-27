@@ -34,16 +34,16 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24 animate-fade-in-up animation-delay-300">
-          <Link href="#features" className="w-full sm:w-auto">
+          <Link href="/#features" className="w-full sm:w-auto">
             <Button size="lg" className="w-full group">
               Explore Developer Cockpit
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
-          <Link href="#demo" className="w-full sm:w-auto">
+          <Link href="/demo" className="w-full sm:w-auto">
             <Button variant="secondary" size="lg" className="w-full">
               <Play className="mr-2 h-4 w-4" />
-              Watch Demo
+              Watch Demos
             </Button>
           </Link>
         </div>

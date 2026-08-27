@@ -9,12 +9,12 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
 
   const navLinks = [
-    { name: "Product", href: "#product" },
-    { name: "Features", href: "#features" },
-    { name: "Architecture", href: "#architecture" },
-    { name: "Roadmap", href: "#roadmap" },
+    { name: "Product", href: "/#product" },
+    { name: "Features", href: "/#features" },
+    { name: "Architecture", href: "/#architecture" },
+    { name: "Roadmap", href: "/#roadmap" },
     { name: "Documentation", href: "https://github.com/ratuhin1122/developer-cockpit-public/tree/main/docs", external: true },
-    { name: "Demo", href: "#demo" },
+    { name: "Demos", href: "/demo" },
   ]
 
   return (
@@ -41,7 +41,7 @@ export function Header() {
         </div>
         
         <div className="hidden md:flex items-center space-x-4">
-          <Link href="#partner">
+          <Link href="/#partner">
             <Button variant="primary" size="sm">
               Partner With Us
             </Button>
@@ -75,7 +75,7 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-6 border-t border-zinc-800 flex flex-col space-y-4">
-              <Link href="#partner" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/#partner" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button variant="primary" className="w-full justify-center">Partner With Us</Button>
               </Link>
               {/* <Button variant="primary" className="w-full justify-center">Download Free</Button> */}
